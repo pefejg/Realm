@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Realm</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="name_">Nombre:</string>
+    <string name="lastName1_">Apellido paterno:</string>
+    <string name="lastName2_">Apellido materno:</string>
+    <string name="birthDay_">Fecha de nacimiento:</string>
+    <string name="country_">Pais:</string>
+    <string name="register">Registro</string>
+    <string name="rotationPeriod_">Rotación:</string>
+    <string name="orbitalPeriod_">Orbita:</string>
+    <string name="climate_">Clima:</string>
+    <string name="diameter_">Diametro:</string>
+    <string name="gravity_">Gravedad</string>
+    <string name="terrain_">Terreno:</string>
+    <string name="surface_water_">Superficie de agua</string>
+    <string name="population_">Población:</string>
+    <string name="detail">Detalle</string>
+    <string name="created_">Creado:</string>
+    <string name="edited_">Editado:</string>
+    <string name="required_field">Campo requerido</string>
 </resources>

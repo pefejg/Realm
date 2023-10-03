@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_5dp"
+            app:cardCornerRadius="@dimen/_8dp"
+            app:cardElevation="@dimen/_4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.9">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/planetName"
+                        style="@style/commonText18.Bold"
+                        android:maxLines="1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="@tools:sample/lorem/random" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout16"
+                        android:layout_width="@dimen/_0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/planetName"
+                        app:layout_constraintWidth_percent="0.9">
+                        <View
+                            android:id="@+id/view"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1dp"
+                            android:layout_marginBottom="@dimen/_10dp"
+                            android:background="@color/color_black_text_cloud"
+                            app:layout_constraintBottom_toTopOf="@id/constraintLayout16"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/middleVerticalGuideline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.5" />
+
+                        <TextView
+                            android:id="@+id/rotationLabel"
+                            style="@style/commonText.Bold"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5dp"
+                            android:gravity="start"
+                            android:text="@string/rotationPeriod_"
+                            android:textSize="@dimen/_14sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/view" />
+
+                        <TextView
+                            android:id="@+id/rotation"
+                            style="@style/commonText"
+                            app:layout_constraintStart_toEndOf="@id/rotationLabel"
+                            app:layout_constraintEnd_toEndOf="@id/middleVerticalGuideline"
+                            app:layout_constraintTop_toTopOf="@id/rotationLabel"/>
+
+                        <TextView
+                            android:id="@+id/orbitalLabel"
+                            style="@style/commonText.Bold"
+                            android:text="@string/orbitalPeriod_"
+                            android:layout_marginTop="@dimen/_5dp"
+                            app:layout_constraintStart_toEndOf="@id/middleVerticalGuideline"
+                            app:layout_constraintTop_toBottomOf="@id/view"/>
+
+                        <TextView
+                            android:id="@+id/orbital"
+                            style="@style/commonText.Bold"
+                            android:layout_marginTop="@dimen/_5dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/orbitalLabel"
+                            app:layout_constraintTop_toTopOf="@id/orbitalLabel"/>
+
+                        <TextView
+                            android:id="@+id/climateLabel"
+                            style="@style/commonText.Bold"
+                            android:text="@string/climate_"
+                            android:layout_marginTop="@dimen/_5dp"
+                            app:layout_constraintTop_toBottomOf="@id/rotationLabel"
+                            app:layout_constraintStart_toStartOf="parent"/>
+
+                        <TextView
+                            android:id="@+id/climate"
+                            style="@style/commonText"
+                            app:layout_constraintStart_toEndOf="@id/climateLabel"
+                            app:layout_constraintEnd_toEndOf="@id/middleVerticalGuideline"
+                            app:layout_constraintTop_toTopOf="@id/climateLabel"/>
+
+                        <TextView
+                            android:id="@+id/gravityLabel"
+                            style="@style/commonText.Bold"
+                            android:text="@string/gravity_"
+                            android:layout_marginTop="@dimen/_5dp"
+                            app:layout_constraintStart_toEndOf="@id/middleVerticalGuideline"
+                            app:layout_constraintTop_toBottomOf="@id/orbitalLabel"/>
+
+                        <TextView
+                            android:id="@+id/gravity"
+                            style="@style/commonText.Bold"
+                            android:layout_marginTop="@dimen/_5dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/gravityLabel"
+                            app:layout_constraintTop_toTopOf="@id/gravityLabel"/>
+
+                        <TextView
+                            android:id="@+id/diameterLabel"
+                            style="@style/commonText.Bold"
+                            android:text="@string/diameter_"
+                            android:layout_marginTop="@dimen/_5dp"
+                            app:layout_constraintTop_toBottomOf="@id/climateLabel"
+                            app:layout_constraintStart_toStartOf="parent"/>
+
+                        <TextView
+                            android:id="@+id/diameter"
+                            style="@style/commonText"
+                            app:layout_constraintStart_toEndOf="@id/diameterLabel"
+                            app:layout_constraintEnd_toEndOf="@id/middleVerticalGuideline"
+                            app:layout_constraintTop_toTopOf="@id/diameterLabel"/>
+
+                        <TextView
+                            android:id="@+id/terrainLabel"
+                            style="@style/commonText.Bold"
+                            android:text="@string/terrain_"
+                            android:layout_marginTop="@dimen/_5dp"
+                            app:layout_constraintStart_toEndOf="@id/middleVerticalGuideline"
+                            app:layout_constraintTop_toBottomOf="@id/gravityLabel"/>
+
+                        <TextView
+                            android:id="@+id/terrain"
+                            style="@style/commonText.Bold"
+                            android:layout_marginTop="@dimen/_5dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/terrainLabel"
+                            app:layout_constraintTop_toTopOf="@id/terrainLabel"/>
+
+                        <TextView
+                            android:id="@+id/surfaceLabel"
+                            style="@style/commonText.Bold"
+                            android:textSize="@dimen/_14sp"
+                            android:text="@string/surface_water_"
+                            android:layout_marginTop="@dimen/_5dp"
+                            app:layout_constraintTop_toBottomOf="@id/diameterLabel"
+                            app:layout_constraintStart_toStartOf="parent"/>
+
+                        <TextView
+                            android:id="@+id/surface"
+                            style="@style/commonText"
+                            app:layout_constraintStart_toEndOf="@id/surfaceLabel"
+                            app:layout_constraintEnd_toEndOf="@id/middleVerticalGuideline"
+                            app:layout_constraintTop_toTopOf="@id/surfaceLabel"/>
+
+                        <TextView
+                            android:id="@+id/populationLabel"
+                            style="@style/commonText.Bold"
+                            android:text="@string/population_"
+                            android:layout_marginTop="@dimen/_5dp"
+                            app:layout_constraintStart_toEndOf="@id/middleVerticalGuideline"
+                            app:layout_constraintTop_toBottomOf="@id/terrainLabel"/>
+
+                        <TextView
+                            android:id="@+id/population"
+                            style="@style/commonText.Bold"
+                            android:layout_marginTop="@dimen/_5dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/populationLabel"
+                            app:layout_constraintTop_toTopOf="@id/populationLabel"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

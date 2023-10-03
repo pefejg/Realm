@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="AlertDialogText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">19sp</item>
+        <item name="android:fontFamily">@font/proxima_nova_bold</item>
+        <item name="android:textColor">@color/color_black_text_cloud</item>
+    </style>
+
+
+
+
+
+
+
+    <style name="AcceptanceReportFeatureText" parent="android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:textColor">@color/color_black_text_cloud</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AcceptanceReportFeatureStyle" parent="AcceptanceReportFeatureText">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <style name="AcceptanceReportFeatureValueStyle" parent="AcceptanceReportFeatureText">
+        <item name="android:fontFamily">@font/montserrat_light</item>
+    </style>
+
+    <style name="TittleText" parent="Widget.AppCompat.TextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="GeneralDialogFragment" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/new_blue</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowMinWidthMajor">80%</item>
+        <item name="android:windowMinWidthMinor">80%</item>
+    </style>
+
+    <style name="Transparent" parent="android:Theme.Light">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="WhiteColorAccent">
+        <item name="colorAccent">#FFFFFF</item>
+    </style>
+
+    <style name="title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/montserrat_regular</item>
+        <item name="android:textSize">@dimen/_24sp</item>
+        <item name="android:textColor">@color/color_black_text_cloud</item>
+    </style>
+
+    <style name="subtitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="android:textSize">@dimen/text_size_20sp</item>
+        <item name="android:textColor">@color/color_black_text_cloud</item>
+    </style>
+
+    <style name="commonText">
+        <item name="android:layout_width">@dimen/_0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="android:textColor">@color/color_black_text_cloud</item>
+    </style>
+
+    <style name="commonText.Bold" parent="commonText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="commonText18" parent="commonText">
+        <item name="android:textSize">@dimen/text_size_18sp</item>
+    </style>
+
+    <style name="commonText18.Bold" parent="commonText18">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="commonField" parent="commonText18">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/background_gray_two</item>
+        <item name="android:paddingTop">@dimen/_5dp</item>
+        <item name="android:paddingBottom">@dimen/_5dp</item>
+        <item name="android:paddingStart">@dimen/_10dp</item>
+        <item name="android:paddingEnd">@dimen/_10dp</item>
+        <item name="android:gravity">start</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="commonField.0dp">
+        <item name="android:layout_width">@dimen/_0dp</item>
+    </style>
+
+    <style name="commonField.2dp">
+        <item name="android:paddingTop">@dimen/_2dp</item>
+        <item name="android:paddingBottom">@dimen/_2dp</item>
+        <item name="android:background">@drawable/background_gray_rounded</item>
+    </style>
+
+    <style name="commonFieldRounded" parent="commonField">
+        <item name="android:background">@drawable/background_gray_rounded</item>
+    </style>
+
+    <style name="commonFieldRoundedQr" parent="commonText">
+        <item name="android:background">@drawable/background_blue_rounded</item>
+    </style>
+
+    <style name="commonFieldRounded.16dp" parent="commonFieldRounded">
+        <item name="android:textSize">@dimen/_16dp</item>
+        <item name="android:background">@drawable/background_gray_rounded</item>
+    </style>
+
+    <style name="lineField" parent="commonField">
+        <item name="android:background">@color/color_white</item>
+    </style>
+
+    <style name="checkBoxStyle" parent="Base.Theme.AppCompat">
+        <item name="colorAccent">@color/green_checked</item>
+        <item name="android:textColorSecondary">@color/gray_text</item>
+    </style>
+
+
+    <style name="PinWidget" />
+
+
+
+    <style name="Theme.ActDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowMinWidthMajor">96%</item>
+        <item name="android:windowMinWidthMinor">96%</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="Q">false</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+
+    <style name="Theme.Component.Dialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:statusBarColor">@color/color_transparent</item>
+        <item name="android:navigationBarColor">@color/color_transparent</item>
+        <item name="android:windowBackground">@color/color_transparent</item>
+        <item name="android:paddingStart">@dimen/_2dp</item>
+        <item name="android:paddingEnd">@dimen/_2dp</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+
+    <style name="iconCircle" parent="Widget.AppCompat.ImageButton">
+        <item name="android:layout_width">@dimen/_56dp</item>
+        <item name="android:layout_height">@dimen/_56dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginStart">@dimen/_16dp</item>
+        <item name="android:backgroundTint">@color/colorBackgroundBlue</item>
+        <item name="android:padding">@dimen/_14dp</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="EditText.Component.Mac" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">@dimen/_0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textSize">@dimen/_16sp</item>
+        <item name="android:textColor">@color/color_black_text_cloud</item>
+        <item name="android:minHeight">@dimen/_38dp</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:lines">1</item>
+        <item name="android:inputType">textCapCharacters</item>
+        <item name="android:digits">0123456789QWERTYUIOPASDFGHJKLÑZXCVBNMqwertyuiopasdfghjklñzxcvbnm</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:padding">@dimen/_5dp</item>
+        <item name="android:paddingStart">@dimen/padding_start_15dp</item>
+        <item name="android:paddingEnd">@dimen/padding_start_15dp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:background">@color/color_transparent</item>
+    </style>
+
+    <style name="ConstraintLayout.Component.Layout.Mac" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/_10dp</item>
+        <item name="android:layout_marginBottom">@dimen/_10dp</item>
+        <item name="android:background">@drawable/background_gray_rounded</item>
+    </style>
+
+
+
+    <style name="FragmentCardDialogNoBackground" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Header" parent="TextAppearance.AppCompat.Light.SearchResult.Title">
+        <item name="android:textColor">#3B4559</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="textInputRedesign" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">#F6F6F6</item>
+        <item name="android:textSize">25sp</item>
+        <item name="hintTextAppearance">@style/textHintStyle</item>
+    </style>
+
+    <style name="textHintStyle">
+        <item name="android:textColor">#3B4559</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="textInputCustom" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/grayText2_50Alpha</item>
+        <item name="hintTextColor">@color/grayText2_50Alpha</item>
+        <item name="android:textColorHint">@color/grayText2_50Alpha</item>
+        <item name="boxCornerRadiusTopStart">6dp</item>
+        <item name="boxCornerRadiusTopEnd">6dp</item>
+        <item name="boxCornerRadiusBottomStart">6dp</item>
+        <item name="boxCornerRadiusBottomEnd">6dp</item>
+    </style>
+
+    <style name="textPhoneHintStyle">
+        <item name="android:textColor">#3B4559</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="inputEditHelperText">
+        <item name="android:textColor">@color/grayText2</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="inputEditHelperTextError">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Question" parent="TextAppearance.AppCompat.Light.SearchResult.Title">
+        <item name="android:textColor">#3B4559</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+    <style name="PersonalDataID" parent="TextAppearance.AppCompat.Light.SearchResult.Title">
+        <item name="android:textColor">#3B4559</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+
+</resources>
